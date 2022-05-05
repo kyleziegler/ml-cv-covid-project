@@ -1,5 +1,4 @@
 import os
-# import cv2
 import numpy as np
 
 from tqdm import tqdm
@@ -8,7 +7,6 @@ import matplotlib.pyplot as plt
 
 import tensorflow as tf
 print(tf.__version__)
-print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
 
 def _image_feature(value):
