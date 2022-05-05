@@ -1,4 +1,4 @@
-# ml-cv-covid-project
+# Tensorflow for Computer Vision Project
 Leveraging TensorFlow to create bounding boxes and classes on CT scans of the lungs.
 
 ## To get started
