@@ -2,12 +2,14 @@ import os
 import numpy as np
 
 from tqdm import tqdm
+from PIL import Image
 
 import matplotlib.pyplot as plt
 
 import tensorflow as tf
 print(tf.__version__)
 
+image_dir = ""
 
 def _image_feature(value):
     """Returns a bytes_list from a string / byte."""
