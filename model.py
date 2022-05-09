@@ -63,12 +63,14 @@ class Model:
 
     def add_loss_function(self, initial_learning_rate, decay_steps, decay_rate):
         """Compiles the model object with 2 loss functions and metrics"""
-        losses = { "cl_head":tf.keras.losses.SparseCategoricalCrossentropy(),
-                    "bb_head":tf.keras.losses.MSE
-                }
+        losses = { 
+            "cl_head":tf.keras.losses.SparseCategoricalCrossentropy(),        
+            "bb_head":tf.keras.losses.MSE
+        }
 
-        metrics = { "cl_head": "accuracy",
-                    "bb_head": "mean_squared_error"
+        metrics = { 
+            "cl_head": "accuracy",
+            "bb_head": "mean_squared_error"
         }
 
         lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
